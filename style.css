@@ -17,11 +17,29 @@ body {
     padding: 8px;
 }
 
-.container {
-    padding: 48px;
+.hero-image {
+    background-image: url("images/hero-image.png");
+    background-color: #a6d3ec;
+    height: 750px;
+
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    padding: 96px;
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
+}
+
+.hero-text {
+    color: rgb(13, 90, 141);
+    font-size: 24px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
 }
 
 .footer {
@@ -52,7 +70,6 @@ a {
 
 ul {
     list-style-type: none;
-
     display: flex;
 
     margin: 0;
@@ -73,4 +90,48 @@ ul {
 
 .youtube {
     padding-right: 64px;
+}
+
+.container {
+    padding: 24px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    margin-top: 32px;
+
+    gap: 64px;
+}
+
+.info {
+    border: 1px solid darkgray;
+    box-shadow: 2px 4px 8px dimgray;
+    border-radius: 2.5%;
+
+    padding: 16px;
+    width: 350px;
+}
+
+.info-image {
+    width: 350px;
+    height: auto;
+}
+
+.text, .subtext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 16px;
+}
+
+.text {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.subtext {
+    font-size: 18px;
+    color: dimgray;
 }
