@@ -1,28 +1,76 @@
-/* <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-
-@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap'); */
-
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 
 body {
     margin: 0;
     background-color: white;
-    font-family: "Oswald", sans-serif;
+    font-family: "Inconsolata", monospace;
 }
 
 .header {
-    display: flex;
     background: white;
-    align-items: center;
+    border-bottom: 1px solid darkgray;
+    box-shadow: 0 0 8px dimgray;
+    
+
+    display: flex;
     justify-content: space-between;
+    padding: 8px;
+}
+
+.container {
+    padding: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.footer {
+    height: 32px;
+    background: white;
+    color: dimgray;
+
+    /* border-top: 1px solid darkgray; */
+    /* box-shadow: 0 0 16px dimgray; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo {
-    font-size: 32px;
-    font-weight: 900;
     color: black;
-    background: white;
-    padding: 4px 32px;
+    font-size: 32px;
+    font-weight: 500;
+
+    padding: 16px 64px;
+}
+
+a {
+    text-decoration: none;
+    color: dimgray;
+}
+
+ul {
+    list-style-type: none;
+
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+}
+
+.left, .center, .right {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.instagram, .twitter, .youtube {
+    width: 16px;
+    height: auto;
+}
+
+.youtube {
+    padding-right: 64px;
 }
